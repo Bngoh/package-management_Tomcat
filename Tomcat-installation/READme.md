@@ -17,6 +17,7 @@
 
 ``` sh
 # install Java JDK 1.8+ as a pre-requisit for tomcat to run.
+sudo hoatname tomcat
 cd /opt 
 sudo yum install git wget -y
 sudo yum install java-1.8.0-openjdk-devel -y
@@ -37,5 +38,8 @@ sudo ln -s /opt/tomcat9/bin/startup.sh /usr/bin/starttomcat
 sudo ln -s /opt/tomcat9/bin/shutdown.sh /usr/bin/stoptomcat
 sudo yum update -y
 starttomcat
+# check is tomcat is running 
+ps -ef | grep tomcat
+
 ```
 
